@@ -1,6 +1,10 @@
 from itertools import combinations
 
-file = open("day8.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day8.txt", "r")
 input_string = file.read()
 map_list = input_string.split("\n")
 

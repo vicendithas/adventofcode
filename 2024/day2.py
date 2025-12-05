@@ -1,6 +1,11 @@
-file = open("day2.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day2.txt", "r")
 input_string = file.read()
 input_list = input_string.split("\n")
+
 valid_count = 0
 valid_count_damp = 0
 

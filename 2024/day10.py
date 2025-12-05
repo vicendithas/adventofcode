@@ -1,6 +1,10 @@
 import dijkstra
 
-file = open("day10.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day10.txt", "r")
 input_string = file.read()
 map_list = input_string.split("\n")
 

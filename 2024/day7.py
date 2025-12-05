@@ -1,4 +1,8 @@
-file = open("day7.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day7.txt", "r")
 input_string = file.read()
 equ_list = input_string.split("\n")
 

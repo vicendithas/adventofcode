@@ -1,6 +1,10 @@
 import re
 
-file = open("day3.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day3.txt", "r")
 input_string = file.read()
 
 regex = r"(mul\([0-9]+,[0-9]+\))|(do\(\))|(don't\(\))"

@@ -1,6 +1,11 @@
-file = open("day4.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day4.txt", "r")
 input_string = file.read()
 input_list = input_string.split("\n")
+
 xmas_count = 0
 xmas_count2 = 0
 

@@ -1,4 +1,8 @@
-file = open("day11.txt", "r")
+import os
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+
+file = open(script_dir + "/input/day11.txt", "r")
 input_string = file.read()
 stone_list = input_string.split("\n")
 
